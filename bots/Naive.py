@@ -25,7 +25,7 @@ class Naive(object):
                         dest = planet
             else:
                 fleet_size = 0
-                for my_planet in gameinfo.my_planets:
+                for my_planet in gameinfo.my_planets.values():
                     fleet_size += my_planet.num_ships
                 trunc_destlist = destlist
                 remove_these = []

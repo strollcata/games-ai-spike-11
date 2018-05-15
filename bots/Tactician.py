@@ -73,7 +73,7 @@ class Tactician(object):
                 elif planet_mult == 0.99999:
                     planet_mult = 1
                 else:
-                    for my_planet in gameinfo.my_planets:
+                    for my_planet in gameinfo.my_planets.values():
                         attacking_planets.append(my_planet)
                         individual_fleets.append(my_planet.num_ships)
                     return attacking_planets, individual_fleets

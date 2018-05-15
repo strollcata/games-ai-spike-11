@@ -344,7 +344,7 @@ class PlanetWarsWindow(window.Window):
 
 
 if __name__ == '__main__':
-    gamestate = open('./maps/map5.txt').read()
+    gamestate = open('./maps/map71.txt').read()
     players = ['Naive', 'Tactician']
     window = PlanetWarsWindow(gamestate=gamestate, players=players, max_game_length=500)
     app.run()
